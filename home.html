@@ -1,152 +1,171 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>home</title>
-<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
-<style type="text/css">
-body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,form,hr,fieldset,h1,h2,h3,h4,h5,h6,img,input{
-	margin:0;
-	padding:0;
-}
-body{
-	background: url(img/pub_15.jpg);
-	margin: 0;
-	padding: 0;
-}
-.nav{
-	width: 100%;
-	height: 58px;
-	float: right;
-	margin-top: -200px;
-	padding: 0;
-	
-	background: #fff;
-}
-.nav ul {
-	float: right;
-}
-.nav ul li{
-	float: right;
-	list-style: none;
-	
-}
-.nav ul li a{
-	text-decoration: none;
-	height: 50px;
-	padding: 20px;
-	
-	font-size: 18px;
-	line-height: 50px;
-	
-	
-}
-.nav ul li a:hover{
-    background: red;
-    
-}
 
-.left{
-	float: left;
-	color: #fff;
-	margin-left: 20px;
-	padding: 10px;
-	font-style: italic;
-	
-}
-.content{
-	padding: 20px;
-	width: 200px;
-	height: 150px;
-	position: relative;
-	margin:200px 900px;
-	perspective: 1500px;
-}
-.box{
-	width: 200px;
-	height: 150px;
-	transform-style: preserve-3d;
-	transform:rotateX(-30deg);
-	animation:photo 15s linear infinite;
-}
-.box:hover{
-	animation:photo 15s linear infinite paused;
-}
-.box img{
-	width: 200px;
-	height: 200px;
-	position: absolute;
-	left: 0;
-	top: 0;
-	transform-style: preserve-3d;
-	transition: all 1s;
-}
-.box img:nth-child(1){
-	transform:translateZ(280px);
-}
-.box img:nth-child(2){
-	transform:rotateY(40deg) translateZ(280px);
-}
-.box img:nth-child(3){
-	transform:rotateY(80deg) translateZ(280px);
-}
-.box img:nth-child(4){
-	transform:rotateY(120deg) translateZ(280px);
-}
-.box img:nth-child(5){
-	transform:rotateY(160deg) translateZ(280px);
-}
-.box img:nth-child(6){
-	transform:rotateY(200deg) translateZ(280px);
-}
-.box img:nth-child(7){
-	transform:rotateY(240deg) translateZ(280px);
-}
-.box img:nth-child(8){
-	transform:rotateY(280deg) translateZ(280px);
-}
-.box img:nth-child(9){
-	transform:rotateY(320deg) translateZ(280px);
-}
- 
-.box img:nth-child(1):hover{
-	transform:translateZ(280px) scale(1.2);
-}
-.box img:nth-child(2):hover{
-	transform:rotateY(40deg) translateZ(280px) scale(1.2);
-}
-.box img:nth-child(3):hover{
-	transform:rotateY(80deg) translateZ(280px) scale(1.2);
-}
-.box img:nth-child(4):hover{
-	transform:rotateY(120deg) translateZ(280px) scale(1.2);
-}
-.box img:nth-child(5):hover{
-	transform:rotateY(160deg) translateZ(280px) scale(1.2);
-}
-.box img:nth-child(6):hover{
-	transform:rotateY(200deg) translateZ(280px) scale(1.2);
-}
-.box img:nth-child(7):hover{
-	transform:rotateY(240deg) translateZ(280px) scale(1.2);
-}
-.box img:nth-child(8):hover{
-	transform:rotateY(280deg) translateZ(280px) scale(1.2);
-}
-.box img:nth-child(9):hover{
-	transform:rotateY(320deg) translateZ(280px) scale(1.2);
-}
- 
-@keyframes photo{
-	0%{
-		transform:rotateX(-20deg) rotateY(0deg);
-	}
-	100%{
-		transform:rotateX(-20deg) rotateY(360deg);
-	}
-}
-</style>
+<head>
+	<meta charset="UTF-8">
+	<title>home</title>
+	<link href="/css/common.css"  rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/js/jquery-1.10.1.min.js"></script>
+
+	<style type="text/css">
+		body,
+		div,
+		p,
+		ul,
+		ol,
+		li,
+		dl,
+		dt,
+		dd,
+		table,
+		tr,
+		td,
+		form,
+		hr,
+		fieldset,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		img,
+		input {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background: url(img/pub_15.jpg);
+			margin: 0;
+			padding: 0;
+		}
+
+
+		.left {
+			float: left;
+			color: #fff;
+			margin-left: 20px;
+			padding: 10px;
+			font-style: italic;
+
+		}
+
+		.content {
+			padding: 20px;
+			width: 200px;
+			height: 150px;
+			position: relative;
+			margin: 200px 900px;
+			perspective: 1500px;
+		}
+
+		.box {
+			width: 200px;
+			height: 150px;
+			transform-style: preserve-3d;
+			transform: rotateX(-30deg);
+			animation: photo 15s linear infinite;
+		}
+
+		.box:hover {
+			animation: photo 15s linear infinite paused;
+		}
+
+		.box img {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			transform-style: preserve-3d;
+			transition: all 1s;
+		}
+
+		.box img:nth-child(1) {
+			transform: translateZ(280px);
+		}
+
+		.box img:nth-child(2) {
+			transform: rotateY(40deg) translateZ(280px);
+		}
+
+		.box img:nth-child(3) {
+			transform: rotateY(80deg) translateZ(280px);
+		}
+
+		.box img:nth-child(4) {
+			transform: rotateY(120deg) translateZ(280px);
+		}
+
+		.box img:nth-child(5) {
+			transform: rotateY(160deg) translateZ(280px);
+		}
+
+		.box img:nth-child(6) {
+			transform: rotateY(200deg) translateZ(280px);
+		}
+
+		.box img:nth-child(7) {
+			transform: rotateY(240deg) translateZ(280px);
+		}
+
+		.box img:nth-child(8) {
+			transform: rotateY(280deg) translateZ(280px);
+		}
+
+		.box img:nth-child(9) {
+			transform: rotateY(320deg) translateZ(280px);
+		}
+
+		.box img:nth-child(1):hover {
+			transform: translateZ(280px) scale(1.2);
+		}
+
+		.box img:nth-child(2):hover {
+			transform: rotateY(40deg) translateZ(280px) scale(1.2);
+		}
+
+		.box img:nth-child(3):hover {
+			transform: rotateY(80deg) translateZ(280px) scale(1.2);
+		}
+
+		.box img:nth-child(4):hover {
+			transform: rotateY(120deg) translateZ(280px) scale(1.2);
+		}
+
+		.box img:nth-child(5):hover {
+			transform: rotateY(160deg) translateZ(280px) scale(1.2);
+		}
+
+		.box img:nth-child(6):hover {
+			transform: rotateY(200deg) translateZ(280px) scale(1.2);
+		}
+
+		.box img:nth-child(7):hover {
+			transform: rotateY(240deg) translateZ(280px) scale(1.2);
+		}
+
+		.box img:nth-child(8):hover {
+			transform: rotateY(280deg) translateZ(280px) scale(1.2);
+		}
+
+		.box img:nth-child(9):hover {
+			transform: rotateY(320deg) translateZ(280px) scale(1.2);
+		}
+
+		@keyframes photo {
+			0% {
+				transform: rotateX(-20deg) rotateY(0deg);
+			}
+
+			100% {
+				transform: rotateX(-20deg) rotateY(360deg);
+			}
+		}
+	</style>
 </head>
+
 <body>
 	<div class="container_fuild">
 		<div class="nav">
@@ -154,48 +173,48 @@ body{
 				<h2>caoxiaomei'web</h2>
 			</div>
 			<div class="right">
-			<ul>
-				<li><a  href="contact.html" style="margin-right: 20px;">联系我</a></li>
-				<li><a href="comment.html">留帖</a></li>
-				<li><a href="hobby.html">个人爱好</a></li>
-				<li><a href="skill.html">技能</a></li>
-				<li><a href="person.html">求职简历</a></li>
-				<li><a  href="home.html">首页</a></li>
-				
-			</ul>
+				<ul>
+					<li><a href="contact.html" style="margin-right: 20px;">联系我</a></li>
+					<li><a href="comment.html">留帖</a></li>
+					<li><a href="hobby.html">个人爱好</a></li>
+					<li><a href="skill.html">技能</a></li>
+					<li><a href="person.html">求职简历</a></li>
+					<li><a href="home.html">首页</a></li>
+
+				</ul>
 			</div>
 		</div>
 		<div class="left">
 			<h1>WELCOME TO MY HOME</h1><br />
 			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				失败也是我需要的，它和成功对我一样有价值，只有在我知道做不好的方法以后，<br />
-			<br />我才知道做好的方法是什么.</p>
+				<br />我才知道做好的方法是什么.</p>
 		</div>
-<div class="content">
-	<div class="box">
-		<img src="img/0a524b9b9caae60c99395df53e883d9.jpg" alt=""/>
-		<img src="img/0a524b9b9caae60c99395df53e883d9.jpg" alt=""/>
-		<img src="img/0a524b9b9caae60c99395df53e883d9.jpg" alt=""/>
-		<img src="img/32349c4442a923d999777316debf913.jpg" alt=""/>
-		<img src="img/32349c4442a923d999777316debf913.jpg" alt=""/>
-		<img src="img/3eab4a9ee38baa5f26830ca3e761fcc.jpg" alt=""/>
-		<img src="img/0a524b9b9caae60c99395df53e883d9.jpg" alt=""/>
-		<img src="img/0a524b9b9caae60c99395df53e883d9.jpg" alt=""/>
-		<img src="img/0a524b9b9caae60c99395df53e883d9.jpg" alt=""/>
+		<div class="content">
+			<div class="box">
+				<img src="img/0a524b9b9caae60c99395df53e883d9.jpg" alt="" />
+				<img src="img/0a524b9b9caae60c99395df53e883d9.jpg" alt="" />
+				<img src="img/0a524b9b9caae60c99395df53e883d9.jpg" alt="" />
+				<img src="img/32349c4442a923d999777316debf913.jpg" alt="" />
+				<img src="img/32349c4442a923d999777316debf913.jpg" alt="" />
+				<img src="img/3eab4a9ee38baa5f26830ca3e761fcc.jpg" alt="" />
+				<img src="img/0a524b9b9caae60c99395df53e883d9.jpg" alt="" />
+				<img src="img/0a524b9b9caae60c99395df53e883d9.jpg" alt="" />
+				<img src="img/0a524b9b9caae60c99395df53e883d9.jpg" alt="" />
+			</div>
+		</div>
 	</div>
-</div>
-</div>
 
-<script type="text/javascript">
-/*$(document).ready(function(){
-  $(this).mouseover(function(){
-    $("a").css("background-color","red");
-  });
-  $(this).mouseout(function(){
-    $("a").css("background-color","#6CA6CD");
-  });
-});*/
-</script>
+	<script type="text/javascript">
+		/*$(document).ready(function(){
+			$(this).mouseover(function(){
+				$("a").css("background-color","red");
+			});
+			$(this).mouseout(function(){
+				$("a").css("background-color","#6CA6CD");
+			});
+		});*/
+	</script>
 </body>
 
 </html>
