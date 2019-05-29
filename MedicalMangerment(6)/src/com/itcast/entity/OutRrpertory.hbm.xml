@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+	<class name="com.itcast.entity.OutRepertory" table="outrepertory">
+		<id name="outid" column="outid">
+			<generator class="native"></generator>
+		</id>
+
+		<property name="outnumber" column="outnumber"></property>
+		<property name="outname" column="outname"></property>
+		<property name="outdate" column="outdate"></property>
+		<property name="outprice" column="outprice"></property>
+		<property name="outfactory" column="outfactory"></property>
+		<property name="outtext" column="outtext"></property>
+		<property name="outbrithdate" column="outbrithdate"></property>
+		<property name="outnum" column="outnum"></property>
+		
+		
+
+	</class>
+
+
+
+
+</hibernate-mapping>

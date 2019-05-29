@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>comment</title>
+		<link href="css/bootstrap.min.css" type="text/css" />
+		<link href="css/bootstrap.css" type="text/css" />
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="css/bootstrap.css" >
+<style>
+	body {
+				background: url(img/pub_15.jpg);
+				background-size: cover;
+				margin: 0;
+				padding: 0;
+				
+			}
+			.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+			
+			.box {
+				margin: 0 auto;
+				width: 80%;
+				height: auto;
+			}
+			
+			.nav {
+				width: 100%;
+				height: 58px;
+				float: right;
+				
+				padding: 0;
+				z-index: 1000;
+				background: #fff;
+				margin-bottom: 50px;
+			}
+			
+			.nav ul {
+				float: right;
+			}
+			
+			.nav ul li {
+				float: right;
+				list-style: none;
+			}
+			
+			.nav ul li a {
+				text-decoration: none;
+				height: 50px;
+				padding: 20px;
+			
+				font-size: 18px;
+				line-height: 50px;
+			
+				
+			}
+			
+			.nav ul li a:hover {
+				background: red;
+				color: #fff;
+			}
+			.nav h2{
+				padding-left: 100px;
+				font-style: italic;
+				line-height: 20px;
+				font-style: italic;
+			}
+			.container{
+				margin-top: 100px;
+			}
+			.left{
+				width: 50%;
+				border-radius: 10px;
+				background: rgba(255,255,255,0.6);
+				float: left;
+				
+			}
+			.content{
+				width: 90%;
+				margin: 10px auto;
+				padding: 30px;
+			}
+			.takamessage{
+				width: 40%;
+				text-align: center;
+				height: 100px;
+				margin-top: 200px;
+				padding: 30px;
+				color: #fff;
+			}
+			.form-group input{
+				border-radius: 6px;
+				height: 40px;
+			}
+</style>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+				<div class="nav">
+			<div class="left" style="float: left;">
+				<h2>caoxiaomei'web</h2>
+			</div>
+			<div class="right">
+			<ul>
+				<li><a  href="contact.html" style="margin-right: 20px;">联系我</a></li>
+				<li><a href="comment.html">留帖</a></li>
+				<li><a href="hobby.html">个人爱好</a></li>
+				<li><a href="skill.html">技能</a></li>
+				<li><a href="person.html">求职简历</a></li>
+				<li><a  href="home.html">首页</a></li>
+				
+			</ul>
+			</div>
+		</div>
+			<div class="container">
+				<div class="left">
+					<div class="content">
+		
+			<form>
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="email" class="form-control" id="name" placeholder="Your Name" required="required">
+				</div>
+				<div class="form-group"> 
+					<label for="phone">Phone</label>
+					<input type="password" class="form-control" id="phone" placeholder="Your Phone" required >
+				</div>
+				<div class="form-group"> 
+					<label for="QQ">QQ</label>
+					<input type="password" class="form-control" id="QQ" placeholder="Your QQ" required>
+				</div>
+			<div class="form-group"> 
+					<label for="phone">Message</label>
+					<textarea class="form-control" rows="3" maxlength="255" placeholder="限字数255个字。。。"></textarea>
+				</div>
+				
+				<button type="submit" class="btn btn-danger">Submit</button>
+				
+			</form>
+			</div>
+			</div>
+			<div class="takamessage" style="float: left;">
+				<h2>Please Take Your Message</h2>
+			</div>
+		</div>
+		</div>
+		</div>
+	</body>
+
+</html>

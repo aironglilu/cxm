@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>skill</title>
+	</head>
+	<style>
+		body {
+			background: url(img/pub_15.jpg);
+			margin: 0;
+			padding: 0;
+		}
+		
+		.nav {
+			width: 100%;
+			height: 58px;
+			float: right;
+			padding: 0;
+			background: #6CA6CD;
+		
+		}
+		
+		.nav ul {
+			float: right;
+		}
+		
+		.nav ul li {
+			float: right;
+			list-style: none;
+		}
+		
+		.nav ul li a {
+			text-decoration: none;
+			height: 50px;
+			padding: 20px;
+			color: #fff;
+			font-size: 18px;
+		}
+		
+		.nav h2 {
+			margin: 10px 10px;
+		}
+		
+		.nav ul li a:hover {
+			background: red;
+		}
+		
+		#c1 {
+			margin-top: 50px;
+			margin-left: 40px;
+		}
+		
+		#box1 {
+			float: left;
+			position: relative;
+			width: 120px;
+			height: 120px;
+			margin: 20px;
+			transform-style: preserve-3d;
+			transition: 2s;
+		}
+		
+		.img1 {
+			position: absolute;
+			z-index: 999;
+			width: 120px;
+			height: 120px;
+		}
+		img{
+			width: 120px;
+			height: 120px;
+		}
+		
+		#content1 {
+			background: black;
+			color: white;
+			width: 120px;
+			height: 120px;
+			text-align: center;
+			transform: rotateY(180deg);
+			position: absolute;
+			z-index: 2;
+			border: 1px solid #000;
+			background: rgba(0,0,0,0.5);
+			box-shadow: #fff outer;
+		}
+		
+		#box1:hover {
+			transform: rotateY(180deg);
+			transition: linear 1s;
+		}
+		
+		#content1 p {
+			font-family: "arial, helvetica, sans-serif";
+		}
+		.canvas{
+			float: left;
+			margin-left: 130px;
+		}
+		.skill{
+			float: right;
+			padding: 20px;
+			width: 25%;
+			margin-right: 150px;
+		}
+		.border{
+			width: 100px;
+			height: 100px;
+			border: 1px solid #fff;
+			margin: 10px;
+		}
+	</style>
+
+	<body>
+		<div class="container_fuild">
+<!--導航蘭--->
+			<div class="nav">
+				<div class="left" style="float: left;">
+					<h2 style="color: #fff;">caoxiaomei'web</h2>
+				</div>
+				<div class="right">
+					<ul>
+						<li>
+							<a href="">联系我</a>
+						</li>
+						<li>
+							<a href="comment.html">留帖</a>
+						</li>
+						<li>
+							<a href="hobby.html">个人爱好</a>
+						</li>
+						<li>
+							<a href="skill.html">技能</a>
+						</li>
+						<li>
+							<a href="person.html">求职简历</a>
+						</li>
+						<li>
+							<a href="home.html">首页</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<!--画布-->
+			<div class="canvas">
+				<canvas id="c1" width="400" height="400"></canvas>
+			</div>
+			<!--技能-->
+			<div class="skill">
+
+				<div id="box1">
+					<div class="img1">
+						<img src="img/icon_h5.jpg" />
+					</div>
+					<div id="content1">
+						<div class="border">
+							<p>HTML5</p>
+						<p>60%</p>
+						</div>
+					</div>
+				</div>
+				<div id="box1">
+					<div class="img1">
+						<img src="img/icon_dw.jpg" />
+					</div>
+					<div id="content1">
+						<div class="border">
+						<p>DreamWare</p>
+						<p>80%</p>
+						</div>
+					</div>
+				</div>
+				<div id="box1">
+					<div class="img1">
+						<img src="img/icon_java.jpg" />
+					</div>
+					<div id="content1">
+						<div class="border">
+							<p>Java</p>
+						<p>40%</p>
+						</div>
+					</div>
+				</div>
+				<div id="box1">
+					<div class="img1">
+						<img src="img/icon_ps.jpg" />
+					</div>
+					<div id="content1">
+						<div class="border">
+							<p>PhotoShop</p>
+						<p>60%</p>
+						</div>
+					</div>
+				</div>
+				<div id="box1">
+					<div class="img1">
+						<img src="img/icon_cSharp.jpg" />
+					</div>
+					<div id="content1">
+						<div class="border">
+							<p>CSharp</p>
+						<p>50%</p>
+						</div>
+					</div>
+				</div>
+				<div id="box1">
+					<div class="img1">
+						<img src="img/icon_jsp.jpg" />
+					</div>
+					<div id="content1">
+						<div class="border">
+							<p>JSP</p>
+						<p>50%</p>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+			<div class="jieshao" style="color: #fff;float: left;width: 50%;padding-left: 100px;">
+				<h4 style="margin-top: 0px;text-align: center;">Judge me by Skills</h4>
+				<p>
+					
+本人善于和供应商沟通，确保供应商按时交货与人沟通，在工作中能服从安排，且认真负责，接受能力强，有进取心又有自己独特的见解，同时具有良好的人际交往能力及良好的组织协调决策能力，做事迅速利落，一直得到领导的认可。</p>
+			</div>
+	</body>
+
+	<script>
+		window.onload = function() {
+			var oC = document.getElementById('c1');
+			var oGC = oC.getContext('2d');
+			var num = 0;
+			oGC.translate(200, 200);
+			setInterval(function() {
+				num++;
+				oGC.save();
+				oGC.clearRect(-200, -200, oC.width, oC.height);
+				oGC.rotate(num * Math.PI / 180);
+				oGC.translate(-40, -20);
+				oGC.strokeStyle = "#FFF";
+				oGC.shadowColor = "#A9A9A9"
+				oGC.strokeRect(-50, -60, 220, 220);
+
+				/* oGC.font="30px Arial";
+              oGC.fillText("skill",10,50);*/
+				oGC.font = "60px Verdana";
+				// Create gradient
+				var gradient = oGC.createLinearGradient(0, 0, oC.width, 0);
+				gradient.addColorStop("0", "magenta");
+				gradient.addColorStop("0.5", "blue");
+				gradient.addColorStop("1.0", "red");
+				// Fill with gradient
+				oGC.fillStyle = gradient;
+
+				oGC.fillText("Skill", -10, 100);
+				oGC.fillText("", 40, 120);
+				oGC.fillText("my", 30, 10);
+				oGC.restore();
+			}, 30);
+		};
+	</script>
+
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+   
+  <class name="com.itcast.entity.Repertory" table="repertory">
+		<id name="rid" column="rid">
+			<generator class="native"></generator>
+		</id>
+
+     	<property name="rnumber" column="rnumber"></property>
+     	<property name="rproduct" column="rproduct"></property>
+		<property name="rdate" column="rdate"></property>
+		<property name="rtotal" column="rtotal"></property>
+		<property name="runit" column="runit"></property>
+		
+       <property name="rbrithdate" column="rbrithdate"></property>
+       <property name="rtype" column="rtype"></property>
+		<property name="rname" column="rname"></property>
+		<property name="rbdate" column="rbdate"></property>
+		<property name="rput" column="rput"></property>
+
+	</class>
+    
+    
+    </hibernate-mapping>
