@@ -1,356 +1,318 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		<title>personal</title>
-		<style>
-			body {
-				background: url(img/pub_15.jpg) no-repeat;
-				background-size: cover;
-				margin: 0;
-				padding: 0;
-				
-			}
-			.container_fuild{
-				height: auto;
-				width: 100%;
-				margin-top: -48px;
-				
-			}
-			
-			.box {
-				margin: 0 auto;
-				width: 80%;
-				height: auto;
-			}
-			
-			.nav {
-				width: 100%;
-				height: 58px;
-				float: right;
-				
-				padding: 0;
-				z-index: 1000;
-				background: #fff;
-			}
-			
-			.nav ul {
-				float: right;
-			}
-			
-			.nav ul li {
-				float: right;
-				list-style: none;
-			}
-			
-			.nav ul li a {
-				text-decoration: none;
-				height: 50px;
-				padding: 20px;
-				
-				font-size: 18px;
-				
-			}
-			
-			.nav ul li a:hover {
-				background: red;
-				color: #fff;
-			}
-			
-			.header {
-				text-align: center;
-				font-size: 34px;
-				font-family: 宋体;
-				font-weight: bold;
-			}
-			
-			.content-personal {
-				width: 100%;
-				height: 300px;
-			}
-			
-			a {
-				text-decoration: none;
-			}
-			
-			.container {
-				position: relative;
-				width: 400px;
-				height: 300px;
-				margin: 30px 20px;
-				box-shadow: 0 0 5px green;
-				overflow: hidden;
-				float: left;
-			}
-			
-			.container .wrap {
-				position: absolute;
-				width: 4200px;
-				height: 400px;
-				z-index: 1;
-			}
-			
-			.container .wrap img {
-				float: left;
-				width: 600px;
-				height: 400px;
-			}
-			
-			.container .buttons {
-				position: absolute;
-				right: 5px;
-				bottom: 40px;
-				width: 150px;
-				height: 10px;
-				z-index: 2;
-			}
-			
-			.container .buttons span {
-				margin-left: 5px;
-				display: inline-block;
-				width: 20px;
-				height: 20px;
-				border-radius: 50%;
-				background-color: green;
-				text-align: center;
-				color: white;
-				cursor: pointer;
-			}
-			
-			.container .buttons span.on {
-				background-color: red;
-			}
-			
-			.container .arrow {
-				position: absolute;
-				top: 35%;
-				color: green;
-				padding: 0px 14px;
-				border-radius: 50%;
-				font-size: 50px;
-				z-index: 2;
-				display: none;
-			}
-			
-			.container .arrow_left {
-				left: 10px;
-			}
-			
-			.container .arrow_right {
-				right: 10px;
-			}
-			
-			.container:hover .arrow {
-				display: block;
-			}
-			
-			.container .arrow:hover {
-				background-color: rgba(0, 0, 0, 0.2);
-			}
-			
-			.personal {
-				float: right;
-				width: 50%;
-				height: 400px;
-			}
-			
-			.personal p {
-				color: darkgray;
-			}
-			.personal h3 {
-				color: #fff;
-			}
-			
-			#grad1 {
-				height: 2px;
-				border-radius: 10px;
-				background: -webkit-linear-gradient(left, red, blue, #FFFF00);
-				/* Safari 5.1 - 6.0 */
-				background: -o-linear-gradient(right, red, blue, #FFFF00);
-				/* Opera 11.1 - 12.0 */
-				background: -moz-linear-gradient(right, red, blue, #FFFF00);
-				/* Firefox 3.6 - 15 */
-				background: linear-gradient(to right, red, blue, #FFFF00);
-				/* 标准的语法（必须放在最后） */
-			}
-			.header{
-				color: #fff;
-			}
-		</style>
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<title>personal</title>
+	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="/css/common.css" rel="stylesheet" type="text/css" />
+	<style>
+		body {
+			background: url(img/pub_15.jpg) no-repeat;
+			background-size: cover;
+			margin: 0;
+			padding: 0;
 
-	<body>
-		<div class="container_fuild">
-			<div class="nav">
-				<div class="left" style="float: left;">
-					<h2 style="color: #fff;">caoxiaomei'web</h2>
-				</div>
-				<div class="right">
-					<ul>
-						<li>
-							<a href="contact.html" style="margin-right: 20px;">联系我</a>
-						</li>
-						<li>
-							<a href="comment.html">留帖</a>
-						</li>
-						<li>
-							<a href="hobby.html">个人爱好</a>
-						</li>
-						<li>
-							<a href="skill.html">技能</a>
-						</li>
-						<li>
-							<a href="person.html">求职简历</a>
-						</li>
-						<li>
-							<a href="home.html">首页</a>
-						</li>
+		}
 
-					</ul>
-				</div>
+		.container_fuild {
+			height: auto;
+			width: 100%;
+			margin-top: -48px;
+
+		}
+
+		.box {
+			margin: 217px auto;
+			width: 80%;
+			height: auto;
+		}
+
+		.header {
+			text-align: center;
+			font-size: 34px;
+			font-family: 宋体;
+			font-weight: bold;
+		}
+
+		.content-personal {
+			width: 100%;
+			height: 300px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.container {
+			position: relative;
+			width: 400px;
+			height: 300px;
+			margin: 30px 20px;
+			box-shadow: 0 0 5px green;
+			overflow: hidden;
+			float: left;
+		}
+
+		.container .wrap {
+			position: absolute;
+			width: 4200px;
+			height: 400px;
+			z-index: 1;
+		}
+
+		.container .wrap img {
+			float: left;
+			width: 600px;
+			height: 400px;
+		}
+
+		.container .buttons {
+			position: absolute;
+			right: 5px;
+			bottom: 40px;
+			width: 150px;
+			height: 10px;
+			z-index: 2;
+		}
+
+		.container .buttons span {
+			margin-left: 5px;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: green;
+			text-align: center;
+			color: white;
+			cursor: pointer;
+		}
+
+		.container .buttons span.on {
+			background-color: red;
+		}
+
+		.container .arrow {
+			position: absolute;
+			top: 35%;
+			color: green;
+			padding: 0px 14px;
+			border-radius: 50%;
+			font-size: 50px;
+			z-index: 2;
+			display: none;
+		}
+
+		.container .arrow_left {
+			left: 10px;
+		}
+
+		.container .arrow_right {
+			right: 10px;
+		}
+
+		.container:hover .arrow {
+			display: block;
+		}
+
+		.container .arrow:hover {
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+
+		.personal {
+			float: right;
+			width: 50%;
+			height: 400px;
+		}
+
+		.personal p {
+			color: darkgray;
+		}
+
+		.personal h3 {
+			color: #fff;
+		}
+
+		#grad1 {
+			height: 2px;
+			border-radius: 10px;
+			background: -webkit-linear-gradient(left, red, blue, #FFFF00);
+			/* Safari 5.1 - 6.0 */
+			background: -o-linear-gradient(right, red, blue, #FFFF00);
+			/* Opera 11.1 - 12.0 */
+			background: -moz-linear-gradient(right, red, blue, #FFFF00);
+			/* Firefox 3.6 - 15 */
+			background: linear-gradient(to right, red, blue, #FFFF00);
+			/* 标准的语法（必须放在最后） */
+		}
+
+		.header {
+			color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container_fuild">
+
+		<nav class="top_nav">
+			<div class="top_nav_z col-sm-7 col-xs-3 text-overflow">
+				<h2>caoxiaomei'web</h2>
 			</div>
+			<div class="top_nav_y col-sm-5 col-xs-9 text-right">
+				<ul>
+					<li><a href="contact.html" style="margin-right: 20px;">联系我</a></li>
+					<li><a href="comment.html">留帖</a></li>
+					<li><a href="hobby.html">个人爱好</a></li>
+					<li><a href="skill.html">技能</a></li>
+					<li><a href="person.html">求职简历</a></li>
+					<li><a href="home.html">首页</a></li>
 
-			<div class="box">
-				<div class="header">
-					<h1>About Me</h1>
-				</div>
-				<div class="content-personal">
-					<!--大头像展示-->
-					<div class="container">
-						<div class="wrap" style="left: -600px;">
-							<img src="img/test.jpg" alt="">
-							<img src="img/test1.jpg" alt="">
-							<img src="img/test.jpg" alt="">
-							<img src="img/test.jpg" alt="">
-							<img src="img/test1.jpg" alt="">
-							<img src="img/test.jpg" alt="">
-							<img src="img/test1.jpg" alt="">
-						</div>
-						<div class="buttons">
-							<span class="on">1</span>
-							<span>2</span>
-							<span>3</span>
-							<span>4</span>
-							<span>5</span>
-						</div>
-						<a href="javascript:;" class="arrow arrow_left">&lt;</a>
-						<a href="javascript:;" class="arrow arrow_right">&gt;</a>
+				</ul>
+			</div>
+		</nav>
+
+
+		<div class="box">
+			<div class="header">
+				<h1>About Me</h1>
+			</div>
+			<div class="content-personal">
+				<!--大头像展示-->
+				<div class="container">
+					<div class="wrap" style="left: -600px;">
+						<img src="img/test.jpg" alt="">
+						<img src="img/test1.jpg" alt="">
+						<img src="img/test.jpg" alt="">
+						<img src="img/test.jpg" alt="">
+						<img src="img/test1.jpg" alt="">
+						<img src="img/test.jpg" alt="">
+						<img src="img/test1.jpg" alt="">
 					</div>
-					<!--个人信息 -->
-					<div class="personal">
-						<div class="personal-inner">
-							<h3>姓名</h3>
-							<p>曹晓梅</p>
-							<div id="grad1"></div>
-							<h3>性别</h3>
-							<p>女</p>
-							<div id="grad1"></div>
-							<h3>毕业学校</h3>
-							<p>厦门理工软件工程学院</p>
-							<div id="grad1"></div>
-							<h3>毕业时间</h3>
-							<p>2020.06</p>
-							<div id="grad1"></div>
-						</div>
+					<div class="buttons">
+						<span class="on">1</span>
+						<span>2</span>
+						<span>3</span>
+						<span>4</span>
+						<span>5</span>
+					</div>
+					<a href="javascript:;" class="arrow arrow_left">&lt;</a>
+					<a href="javascript:;" class="arrow arrow_right">&gt;</a>
+				</div>
+				<!--个人信息 -->
+				<div class="personal">
+					<div class="personal-inner">
+						<h3>姓名</h3>
+						<p>曹晓梅</p>
+						<div id="grad1"></div>
+						<h3>性别</h3>
+						<p>女</p>
+						<div id="grad1"></div>
+						<h3>毕业学校</h3>
+						<p>厦门理工软件工程学院</p>
+						<div id="grad1"></div>
+						<h3>毕业时间</h3>
+						<p>2020.06</p>
+						<div id="grad1"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<script>
-			//获取wrap框的id与两个箭头的id
-			var wrap = document.querySelector(".wrap");
-			var next = document.querySelector(".arrow_right");
-			var prev = document.querySelector(".arrow_left");
-			//点击下一页，进行 next_pic方法
-			next.onclick = function() {
+	</div>
+	<script>
+		//获取wrap框的id与两个箭头的id
+		var wrap = document.querySelector(".wrap");
+		var next = document.querySelector(".arrow_right");
+		var prev = document.querySelector(".arrow_left");
+		//点击下一页，进行 next_pic方法
+		next.onclick = function () {
+			next_pic();
+		}
+		//点击上一页，进行prev_pic的方法
+		prev.onclick = function () {
+			prev_pic();
+		}
+		//下一页方法，index为图片的数量
+		function next_pic() {
+			index++;
+			//如果index大于4也就是最后一张，则返回第一张
+			if (index > 4) {
+				index = 0;
+			}
+			//
+			showCurrentDot();
+			//
+			var newLeft;
+			//
+			if (wrap.style.left === "-3600px") {
+				newLeft = -1200;
+			} else {
+				newLeft = parseInt(wrap.style.left) - 600;
+			}
+			wrap.style.left = newLeft + "px";
+		}
+
+		function prev_pic() {
+			index--;
+			if (index < 0) {
+				index = 4;
+			}
+			showCurrentDot();
+			var newLeft;
+			if (wrap.style.left === "0px") {
+				newLeft = -2400;
+			} else {
+				newLeft = parseInt(wrap.style.left) + 600;
+			}
+			wrap.style.left = newLeft + "px";
+		}
+		var timer = null;
+
+		function autoPlay() {
+			timer = setInterval(function () {
 				next_pic();
-			}
-			//点击上一页，进行prev_pic的方法
-			prev.onclick = function() {
-				prev_pic();
-			}
-			//下一页方法，index为图片的数量
-			function next_pic() {
-				index++;
-				//如果index大于4也就是最后一张，则返回第一张
-				if(index > 4) {
-					index = 0;
-				}
-				//
-				showCurrentDot();
-				//
-				var newLeft;
-				//
-				if(wrap.style.left === "-3600px") {
-					newLeft = -1200;
-				} else {
-					newLeft = parseInt(wrap.style.left) - 600;
-				}
-				wrap.style.left = newLeft + "px";
-			}
+			}, 2000);
+		}
+		autoPlay();
 
-			function prev_pic() {
-				index--;
-				if(index < 0) {
-					index = 4;
-				}
-				showCurrentDot();
-				var newLeft;
-				if(wrap.style.left === "0px") {
-					newLeft = -2400;
-				} else {
-					newLeft = parseInt(wrap.style.left) + 600;
-				}
-				wrap.style.left = newLeft + "px";
-			}
-			var timer = null;
-
-			function autoPlay() {
-				timer = setInterval(function() {
-					next_pic();
-				}, 2000);
-			}
+		var container = document.querySelector(".container");
+		container.onmouseenter = function () {
+			clearInterval(timer);
+		}
+		container.onmouseleave = function () {
 			autoPlay();
+		}
 
-			var container = document.querySelector(".container");
-			container.onmouseenter = function() {
-				clearInterval(timer);
+		///小圆点的设置
+
+		var index = 0;
+		var dots = document.getElementsByTagName("span");
+
+		function showCurrentDot() {
+			for (var i = 0, len = dots.length; i < len; i++) {
+				dots[i].className = "";
 			}
-			container.onmouseleave = function() {
-				autoPlay();
-			}
+			dots[index].className = "on";
+		}
 
-			///小圆点的设置
-
-			var index = 0;
-			var dots = document.getElementsByTagName("span");
-
-			function showCurrentDot() {
-				for(var i = 0, len = dots.length; i < len; i++) {
-					dots[i].className = "";
-				}
-				dots[index].className = "on";
-			}
-
-			for(var i = 0, len = dots.length; i < len; i++) {
-				(function(i) {
-					dots[i].onclick = function() {
-						var dis = index - i;
-						if(index == 4 && parseInt(wrap.style.left) !== -3000) {
-							dis = dis - 5;
-						}
-						//和使用prev和next相同，在最开始的照片5和最终的照片1在使用时会出现问题，导致符号和位数的出错，做相应地处理即可
-						if(index == 0 && parseInt(wrap.style.left) !== -600) {
-							dis = 5 + dis;
-						}
-						wrap.style.left = (parseInt(wrap.style.left) + dis * 600) + "px";
-						index = i;
-						showCurrentDot();
+		for (var i = 0, len = dots.length; i < len; i++) {
+			(function (i) {
+				dots[i].onclick = function () {
+					var dis = index - i;
+					if (index == 4 && parseInt(wrap.style.left) !== -3000) {
+						dis = dis - 5;
 					}
-				})(i);
-			}
-		</script>
-	</body>
+					//和使用prev和next相同，在最开始的照片5和最终的照片1在使用时会出现问题，导致符号和位数的出错，做相应地处理即可
+					if (index == 0 && parseInt(wrap.style.left) !== -600) {
+						dis = 5 + dis;
+					}
+					wrap.style.left = (parseInt(wrap.style.left) + dis * 600) + "px";
+					index = i;
+					showCurrentDot();
+				}
+			})(i);
+		}
+	</script>
+</body>
 
 </html>
