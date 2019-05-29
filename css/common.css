@@ -81,7 +81,7 @@ input {
 	
 }
 .top_nav ul li a:hover{
-    background: red;
+    background:rgb(212, 245, 247)
     
 }
 .top_nav .left {
@@ -95,4 +95,16 @@ input {
 .top_nav h2{
 	margin: 6px;
     margin-left: 55px;
+}
+
+.section {    
+	margin: auto;    
+	margin-top: 56px;    
+    height: calc(100% - 56px);
+    height: -moz-calc(100% - 56px);
+	height: -webkit-calc(100% - 56px);
+	padding: 20px 0;
+    max-width: 1000px;
+	-webkit-overflow-scrolling: touch;
+	background-color: aliceblue;
 }
