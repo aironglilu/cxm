@@ -8,11 +8,14 @@
 	<link href="/css/common.css" rel="stylesheet" type="text/css" />
 	<style>
 		body {
-			background: url(img/pub_15.jpg) no-repeat;
+			background: url(img/pub_15.jpg) no-repeat center;;
 			background-size: cover;
 			margin: 0;
 			padding: 0;
-
+		}
+		html{
+			width: 100%;
+			height: 100%;
 		}
 
 		.container_fuild {
@@ -24,7 +27,7 @@
 
 		.box {
 			margin: 217px auto;
-			width: 80%;
+			width: 100%;
 			height: auto;
 		}
 
@@ -123,6 +126,7 @@
 			float: right;
 			width: 50%;
 			height: 400px;
+			margin-top: 33px;
 		}
 
 		.personal p {
@@ -149,6 +153,9 @@
 		.header {
 			color: #fff;
 		}
+		.section {
+			height: 100%;
+		}
 	</style>
 </head>
 
@@ -172,7 +179,7 @@
 			</div>
 		</nav>
 
-
+		<section class="section">
 		<div class="box">
 			<div class="header">
 				<h1>About Me</h1>
@@ -218,6 +225,7 @@
 				</div>
 			</div>
 		</div>
+		</section>
 	</div>
 	<script>
 		//获取wrap框的id与两个箭头的id
